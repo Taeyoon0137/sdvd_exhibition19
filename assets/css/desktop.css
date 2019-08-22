@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+/* Typography */
+.outline {
+  color: #0000;
+  -webkit-text-stroke: 3px #053651;
+}
+
+/* loading */
+.loading .background .position .inner_text {
+  font-size: 48px;
+  line-height: 52px;
+}
+
+/* header */
+.header {
+  display: none;
+}
+
+/* main */
+.landing .background {
+  width: 95vw;
+  height: 125vw;
+  right: -14vw;
+  top: 61%;
+  transform: translateY(-50%);
+}
+
+.landing .deco {
+  width: 80vw;
+  height: 125vw;
+  right: -7vw;
+  top: 25%;
+  transform: translateY(-50%);
+}
+
+.landing .landing_info {
+  left: 80px;
+  top: 60px;
+  font-size: 20px;
+}
+
+.landing .landing_info .mobile_landing_info {
+  display: none;
+}
+
+.landing .landing_title {
+  left: 80px;
+  bottom: 52%;
+  transform: translateY(50%);
+}
+
+.landing .landing_title .h1 {
+  font-size: 96px;
+  line-height: 111px;
+}
+
+.landing .GJx2_logo {
+  top: 50%;
+  right: 40px;
+  -webkit-text-stroke: 2px #053651;
+  font-size: 28px;
+  letter-spacing: -0.3px;
+}
+
+.landing .GJx2_logo:hover {
+  right: 50px;
+  -webkit-text-stroke: 2px #0000;
+}
