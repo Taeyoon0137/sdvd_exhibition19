@@ -10,19 +10,28 @@
 @font-face {font-family: 'Pangram'; src: url("../../fonts/Pangram-Regular.otf"); font-weight: 500;}
 @font-face {font-family: 'Pangram'; src: url("../../fonts/Pangram-Black.otf"); font-weight: 900;}
 
+/* wrapper */
+.wrapper_full {
+  position: relative;
+  width: calc(100% - 64px);
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* icons */
+.icn_more {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../../assets/icons/sys/icn_more.svg);
+}
+
 /* header */
 #header {
   position: fixed;
   height: 60px;
   left: 0;
   right: 0;
-}
-
-#header .wrapper_full {
-  position: relative;
-  width: calc(100% - 64px);
-  height: 100%;
-  margin: 0 auto;
 }
 
 #header h1 {
@@ -66,12 +75,20 @@
 
 /* landing */
 #landing {
-  z-index: -99999;
+  z-index: -99;
   position: relative;
   width: 100vw;
   height: 100vh;
+  transform: rotate(0deg);
   background-image: url(../../img/landing_20-mobile.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+
+#landing .icn_more {
+  position: absolute;
+  left: 50%;
+  bottom: 4px;
+  transform: translateX(-50%);
 }
