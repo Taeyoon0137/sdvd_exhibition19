@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/* import fonts */
+@font-face {
+  font-family: 'NanumSquareRound';
+  src: url("../fonts/NanumSquareRoundR.ttf") format("truetype");
+}
+body {
+  font-family: 'NanumSquareRound', sans-serif;
+  color: red;
+}
