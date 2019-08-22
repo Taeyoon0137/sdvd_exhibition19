@@ -1,152 +1,77 @@
 @charset "UTF-8";
 
 /* import fonts */
-@font-face {
-  font-family: 'KoreanCUBEG';
-  src: url("../../fonts/a큐브G.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'NanumSquareRound';
-  src: url("../../fonts/NanumSquareRoundL.ttf") format("truetype");
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: 'NanumSquareRound';
-  src: url("../../fonts/NanumSquareRoundR.ttf") format("truetype");
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: 'NanumSquareRound';
-  src: url("../../fonts/NanumSquareRoundB.ttf") format("truetype");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: 'NanumSquareRound';
-  src: url("../../fonts/NanumSquareRoundEB.ttf") format("truetype");
-  font-weight: 900;
-}
-
-@font-face {
-  font-family: 'Pangram';
-  src: url("../../fonts/Pangram-ExtraLight.otf");
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: 'Pangram';
-  src: url("../../fonts/Pangram-Regular.otf");
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: 'Pangram';
-  src: url("../../fonts/Pangram-Black.otf");
-  font-weight: 900;
-}
-
-/* Typography */
-.fill {
-  color: #053651;
-}
-
-/* loading */
-.loading .background {
-  z-index: 99999;
-  position: fixed;
-  overflow: hidden;
-  width: 100vw;
-  background-color: #E64C30;
-
-  animation-duration: 3s;
-  animation-name: loading;
-  animation-iteration-count: 1;
-}
-
-.loading .background .position {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.loading .background .position .inner_text {
-  position: absolute;
-  top: 50vh;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-
-  font-weight: 700;
-}
-
-@keyframes loading {
-  from {
-    height: 100vh;
-    color: #fff0;
-  }
-
-  40% {
-    height: 100vh;
-    color: #ffff;
-  }
-
-  75% {
-    height: 100vh;
-    color: #ffff;
-  }
-
-  to {
-    height: 0;
-    color: #fff0;
-  }
-}
+@font-face {font-family: 'KoreanCUBEG'; src: url("../../fonts/a큐브G.ttf") format("truetype");}
+@font-face {font-family: 'NanumSquareRound'; src: url("../../fonts/NanumSquareRoundL.ttf") format("truetype"); font-weight: 200;}
+@font-face {font-family: 'NanumSquareRound'; src: url("../../fonts/NanumSquareRoundR.ttf") format("truetype"); font-weight: 500;}
+@font-face {font-family: 'NanumSquareRound'; src: url("../../fonts/NanumSquareRoundB.ttf") format("truetype"); font-weight: 700;}
+@font-face {font-family: 'NanumSquareRound'; src: url("../../fonts/NanumSquareRoundEB.ttf") format("truetype"); font-weight: 900;}
+@font-face {font-family: 'Pangram'; src: url("../../fonts/Pangram-ExtraLight.otf"); font-weight: 200;}
+@font-face {font-family: 'Pangram'; src: url("../../fonts/Pangram-Regular.otf"); font-weight: 500;}
+@font-face {font-family: 'Pangram'; src: url("../../fonts/Pangram-Black.otf"); font-weight: 900;}
 
 /* header */
-.header {
-  width: 100%;
+#header {
+  position: fixed;
+  height: 60px;
+  left: 0;
+  right: 0;
 }
 
-/* main */
-.landing {
+#header .wrapper_full {
+  position: relative;
+  width: calc(100% - 64px);
+  height: 100%;
+  margin: 0 auto;
+}
+
+#header h1 {
+  float: left;
+  color: #053651;
+  font-family: KoreanCUBEG;
+  font-size: 20px;
+  line-height: 60px;
+}
+
+#header h1 .title_soon {
+  color: #0000;
+  -webkit-text-stroke: 1px #053651;
+}
+
+#header .btn_nav {
+  position: relative;
+  float: right;
+  width: 24px;
+  height: 24px;
+  margin: 18px -8px 18px 0;
+}
+
+#header .btn_nav .btn_nav_comp {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  left: 50%;
+  background-color: #053651;
+}
+
+#header .btn_nav .btn_nav_comp_upper {
+  top: 36%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#header .btn_nav .btn_nav_comp_lower {
+  bottom: 36%;
+  transform: translateX(-50%) translateY(50%);
+}
+
+/* landing */
+#landing {
+  z-index: -99999;
   position: relative;
   width: 100vw;
   height: 100vh;
-}
-
-.landing .background {
-  position: absolute;
-  opacity: 0.9;
-  background-image: url("../../img/20_title.png");
+  background-image: url(../../img/landing_20-mobile.png);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: contain;
-}
-
-.landing .deco {
-  position: absolute;
-  background-image: url("../../img/20_deco.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
-}
-
-.landing .landing_info {
-  position: absolute;
-  color: #053651d0;
-  font-weight: 900;
-}
-
-.landing .landing_info .time {
-  color: #05365160;
-}
-
-.landing .landing_title {
-  position: absolute;
-}
-
-.landing .landing_title .h1 {
-  display: inline;
-  font-family: 'KoreanCUBEG';
+  background-size: cover;
 }
