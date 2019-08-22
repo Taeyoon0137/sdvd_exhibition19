@@ -2,16 +2,17 @@ window.onload = ()=> {
   //header color
 
 
-  //nav button
+  //nav button3
   document.querySelector(".btn_nav").addEventListener("click", ()=> {
   document.querySelector("#nav_toggle").classList.toggle("nav-active");
   document.querySelector(".nav").classList.toggle("nav-active");
   })
 }
 
-//window.addEventListener('scroll', function() {
-//var el = document.querySelector('.header_background');
-
-//if(window.scrollY >= 300px) el.classList.add('background');
-//else el.classList.remove('background');
-//});
+var header = document.querySelector('#background');
+  var stickyY = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+  function onScroll(e) {
+    window.scrollY >= stickyY ? header.classList.add('bg_on') :
+                                  header.classList.remove('bg_on');
+  }
+  document.addEventListener('scroll', onScroll);
