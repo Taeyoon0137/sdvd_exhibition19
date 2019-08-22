@@ -21,9 +21,17 @@
   -webkit-text-stroke: 1.5px #053651;
 }
 
+.typo_h3 {
+  font-family: Pangram;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  color: #EB5C3D
+}
+
 .typo_body {
   font-size: 16px;
-  line-height: 22px;
+  line-height: 26px;
 }
 
 .typo_lable {
@@ -47,6 +55,15 @@
   background-image: url(../../assets/icons/sys/icn_more.svg);
 }
 
+/* contents */
+.cont_image {
+  margin-left: -32px;
+  width: 100vw;
+  height: calc(100vw * 0.75);
+  background-color: #0002;
+  margin-bottom: 16px;
+}
+
 /* navigation */
 #navigation .nav {
   z-index: 9998;
@@ -65,15 +82,19 @@
   width: 100vw;
 }
 
-#navigation .nav nav{
-  margin-top: 176px;
+#navigation .nav nav {
+  position: absolute;
+  top: 176px;
 }
 
 #navigation .nav nav .nav_item {
+  margin-bottom: 20px;
   white-space: nowrap;
   font-family: Pangram;
   font-weight: 900;
   font-size: 40px;
+  letter-spacing: 1px;
+  line-height: 40px;
   color: #fff0;
   -webkit-text-stroke: 1.5px #ffff;
 }
@@ -81,6 +102,14 @@
 #navigation .nav nav .nav_select {
   color: #ffff;
   -webkit-text-stroke: 1.5px #fff0;
+}
+
+#navigation nav .GJx2_logo {
+  position: absolute;
+  left: calc(100vw - 64px);
+  top: calc(100vh - 201px);
+  transform: translateX(-100%) translateY(-100%);
+  -webkit-text-stroke: 1px #fff;
 }
 
 /* header */
@@ -188,6 +217,11 @@
   position: absolute;
   bottom: 48px;
   font-weight: 900;
+  color: #053651
+}
+
+#landing .landing_info .typo_body {
+  line-height: 22px;
 }
 
 #landing .icn_more {
@@ -201,7 +235,22 @@
 #intro {
   position: relative;
   width: 100%;
-  height: 100vh;
   margin-top: 100vh;
-  background-color: #fff5;
+  background-color: #fff;
+}
+
+#intro h3 {
+  position: relative;
+  padding-top: 172px;
+  padding-bottom: 16px;
+}
+
+#intro h3 .outline {
+  color: #0000;
+  -webkit-text-stroke: 1px #EB5C3D;
+}
+
+#intro .typo_body {
+  color: #053651;
+  margin-bottom: 64px;
 }
