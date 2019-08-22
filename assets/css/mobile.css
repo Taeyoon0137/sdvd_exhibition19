@@ -19,6 +19,10 @@
 }
 
 /* main */
+.landing {
+  width: 100vw;
+  height: 100vh;
+}
 .landing .background {
   width: 163vw;
   height: 163vh;
@@ -31,13 +35,13 @@
   width: 80vw;
   height: 125vw;
   right: -7vw;
-  top: 25%;
+  bottom: 25%;
   transform: translateY(-50%);
 }
 
 .landing .landing_info {
   left: 32px;
-  bottom: 20%;
+  top: 80%;
   font-size: 16px;
 }
 
