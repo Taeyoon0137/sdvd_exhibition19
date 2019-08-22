@@ -131,6 +131,20 @@
   background-size: contain;
 }
 
+.landing .deco {
+  position: absolute;
+  width: 80vw;
+  height: 125vw;
+  right: -7vw;
+  top: 25%;
+  transform: translateY(-50%);
+
+  background-image: url("../../img/20_deco.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
 .landing .landing_info {
   position: absolute;
   left: 80px;
