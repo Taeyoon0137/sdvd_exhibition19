@@ -1,8 +1,4 @@
 window.onload = ()=> {
-  //header color
-
-
-  //nav button3
   document.querySelector(".btn_nav").addEventListener("click", ()=> {
   document.querySelector("#nav_toggle").classList.toggle("nav-active");
   document.querySelector(".nav").classList.toggle("nav-active");
