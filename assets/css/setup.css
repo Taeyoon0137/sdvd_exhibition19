@@ -396,7 +396,7 @@
 
 #intro .img_nayung-1 {
   background-color: #569989;
-  background-image: url(../../img/intro_nayung.jpg);
+  background-image: url(../../img/intro_nayeong.jpg);
 }
 
 #intro .img_seobo-1 {
@@ -449,6 +449,7 @@
   transform: translateX(-50%) translateY(-50%) rotateZ(0deg);
 }
 
+/* about us */
 #about {
   position: relative;
   margin-top: -1px;
