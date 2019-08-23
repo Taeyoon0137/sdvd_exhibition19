@@ -334,7 +334,7 @@
 
 #landing .landing_info {
   position: absolute;
-  bottom: 95px;
+  top: 80%;
   font-weight: 900;
   color: #053651
 }
