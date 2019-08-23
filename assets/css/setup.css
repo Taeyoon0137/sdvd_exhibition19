@@ -35,7 +35,7 @@
   font-size: 16px;
   line-height: 26px;
   color: #053651;
-  margin-bottom: 64px;
+  margin-bottom: 88px;
 }
 
 .typo_lable {
@@ -65,13 +65,61 @@
   background-image: url(../../assets/icons/sys/icn_more.svg);
 }
 
-/* contents */
-.cont_image {
-  margin-left: -32px;
-  width: 100vw;
-  height: calc(100vw * 0.75);
-  background-color: #0002;
-  margin-bottom: 16px;
+/* decorations */
+.decorations .deco_cwd {
+  position: absolute;
+  background-image: url(../../img/shape_Circle_w_Dots.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.decorations .deco_bmc {
+  position: absolute;
+  background-image: url(../../img/shape_Macaronni_Blue.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.decorations .deco_omc {
+  position: absolute;
+  background-image: url(../../img/shape_Macaronni_Orange.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.decorations .deco_bns {
+  position: absolute;
+  background-image: url(../../img/shape_uneclips.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.decorations .deco_ox {
+  position: absolute;
+  background-image: url(../../img/shape_X_Orange.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.decorations .deco_bx {
+  position: absolute;
+  background-image: url(../../img/shape_X_Blue.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.decorations .deco_tnd {
+  position: absolute;
+  background-image: url(../../img/shape_Triangle_w_Dots.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
 }
 
 /* navigation */
@@ -227,7 +275,7 @@
   background-size: cover;
 }
 
-.decorations {
+#landing .decorations {
   z-index: -50;
   position: relative;
   margin-left: -32px;
@@ -235,93 +283,65 @@
   height: 100%;
 }
 
-.decorations .deco_cwd {
-  position: absolute;
+#landing .decorations .pos_cwd {
   left: 85%;
   top: 77%;
   width: 9.375%;
   height: 13.34%;
   transform: translateX(-50%) translateY(-50%) rotateZ(30deg);
-  background-image: url(../../img/shape_Circle_w_Dots.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
 }
 
-.decorations .deco_bmc {
-  position: absolute;
+#landing .decorations .pos_bmc {
   left: 72%;
   top: 70%;
-  width: 13.9%;
-  height: 8.4%;
-  transform: translateX(-50%) translateY(-50%) rotateZ(5deg);
-  background-image: url(../../img/shape_Macaronni_Blue.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
 }
 
-.decorations .deco_omc {
-  position: absolute;
+#landing .decorations .pos_omc {
   left: 58%;
   top: 15%;
   width: 10.1%;
   height: 4.9%;
   transform: translateX(-50%) translateY(-50%) rotateZ(15deg);
-  background-image: url(../../img/shape_Macaronni_Orange.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
 }
 
-.decorations .deco_bns {
-  position: absolute;
+#landing .decorations .pos_bns {
   left: 75%;
   top: 30%;
   width: 24.5%;
   height: 15.2%;
   transform: translateX(-50%) translateY(-50%) rotateZ(5deg);
-  background-image: url(../../img/shape_uneclips.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
 }
 
-.decorations .deco_ox {
-  position: absolute;
-  width: 4%;
-  height: 2.2%;
-  transform: translateX(-50%) translateY(-50%) rotateZ(0deg);
-  background-image: url(../../img/shape_X_Orange.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
-}
-
-.decorations .deco_bx {
-  position: absolute;
+#landing .decorations .pos_bx {
   width: 4.8%;
   height: 2.7%;
-  transform: translateX(-50%) translateY(-50%) rotateZ(0deg);
-  background-image: url(../../img/shape_X_Blue.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
+  width: 13.9%;
+  height: 8.4%;
+  transform: translateX(-50%) translateY(-50%) rotateZ(5deg);
 }
 
 #landing .decorations .pos_ox1 {
   left: 75%;
   top: 19%;
+  width: 4%;
+  height: 2.2%;
+  transform: translateX(-50%) translateY(-50%) rotateZ(0deg);
 }
 
 #landing .decorations .pos_ox2 {
   left: 3%;
   top: 43%;
+  width: 4%;
+  height: 2.2%;
+  transform: translateX(-50%) translateY(-50%) rotateZ(0deg);
 }
 
 #landing .decorations .pos_bx {
   left: 12%;
   top: 36%;
+  width: 4.8%;
+  height: 2.7%;
+  transform: translateX(-50%) translateY(-50%) rotateZ(0deg);
 }
 
 #landing .GJx2_logo {
@@ -363,8 +383,70 @@
   position: relative;
 }
 
-#intro .typo_body {
+#intro .cont_image {
+  margin-left: -32px;
+  width: 100vw;
+  height: calc(100vw * 0.75);
+  background-color: #0002;
+  margin-bottom: 8px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
 
+#intro .img_nayung-1 {
+  background-color: #569989;
+  background-image: url(../../img/intro_nayung.jpg);
+}
+
+#intro .img_seobo-1 {
+  background-color: #569989;
+  background-image: url(../../img/intro_seobo.jpg);
+}
+
+#intro .img_kimsom-1 {
+  background-color: #569989;
+  background-image: url(../../img/intro_kimsom.jpg);
+}
+
+#intro .decorations .pos_tnd {
+  left: 20%;
+  top: 10%;
+  width: 10%;
+  height: 3.2%;
+  transform: translateX(-50%) translateY(-50%) rotateZ(0deg);
+}
+
+#intro .decorations .pos_omc {
+  left: 75%;
+  top: 6%;
+  width: 18%;
+  height: 7.4%;
+  transform: translateX(-50%) translateY(-50%) rotateZ(0deg);
+}
+
+#intro .decorations .pos_bns {
+  left: 89.5%;
+  top: 31.5%;
+  width: 30%;
+  height: 14.4%;
+  transform: translateX(-50%) translateY(-50%) rotateZ(25deg);
+}
+
+#intro .decorations .pos_ox {
+  left: 15%;
+  top: 31%;
+  width: 4%;
+  height: 1.6%;
+  transform: translateX(-50%) translateY(-50%) rotateZ(0deg);
+}
+
+#intro .decorations .pos_bx {
+  left: 95%;
+  top: 12%;
+  width: 6%;
+  height: 2%;
+  transform: translateX(-50%) translateY(-50%) rotateZ(0deg);
 }
 
 #about {
