@@ -117,7 +117,7 @@
 #navigation nav .GJx2_logo {
   position: absolute;
   left: calc(100vw - 64px);
-  top: calc(100vh - 201px);
+  top: calc(100vh - 250px);
   transform: translateX(-100%) translateY(-100%);
   -webkit-text-stroke: 1px #fff;
 }
