@@ -292,7 +292,7 @@
   width: 4%;
   height: 2.2%;
   transform: translateX(-50%) translateY(-50%) rotateZ(0deg);
-  background-image: url(../../img/shape_X_orange.png);
+  background-image: url(../../img/shape_X_Orange.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -303,7 +303,7 @@
   width: 4.8%;
   height: 2.7%;
   transform: translateX(-50%) translateY(-50%) rotateZ(0deg);
-  background-image: url(../../img/shape_X_blue.png);
+  background-image: url(../../img/shape_X_Blue.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -334,7 +334,7 @@
 
 #landing .landing_info {
   position: absolute;
-  bottom: 48px;
+  bottom: 95px;
   font-weight: 900;
   color: #053651
 }
@@ -347,7 +347,7 @@
 #landing .icn_more {
   position: absolute;
   left: 50%;
-  bottom: 4px;
+  bottom: 25px;
   transform: translateX(-50%);
 }
 
