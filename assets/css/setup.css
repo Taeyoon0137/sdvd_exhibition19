@@ -334,7 +334,7 @@
 
 #landing .landing_info {
   position: absolute;
-  top: 80%;
+  bottom: 60px;
   font-weight: 900;
   color: #053651
 }
@@ -347,7 +347,7 @@
 #landing .icn_more {
   position: absolute;
   left: 50%;
-  bottom: 25px;
+  bottom: 16px;
   transform: translateX(-50%);
 }
 
