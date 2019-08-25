@@ -2,13 +2,16 @@
 
 /* import fonts */
 @font-face {font-family: 'KoreanCUBEG'; src: url("../../fonts/a큐브G.ttf") format("truetype");}
+@font-face { font-family: 'NanumSquareRound'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face {font-family: 'Pangram'; src: url("../../fonts/Pangram-Black.otf"); font-weight: 900;}
+
+/*
 @font-face {font-family: 'NanumSquareRound'; src: url("../../fonts/NanumSquareRoundL.ttf") format("truetype"); font-weight: 200;}
 @font-face {font-family: 'NanumSquareRound'; src: url("../../fonts/NanumSquareRoundR.ttf") format("truetype"); font-weight: 500;}
 @font-face {font-family: 'NanumSquareRound'; src: url("../../fonts/NanumSquareRoundB.ttf") format("truetype"); font-weight: 700;}
 @font-face {font-family: 'NanumSquareRound'; src: url("../../fonts/NanumSquareRoundEB.ttf") format("truetype"); font-weight: 900;}
 @font-face {font-family: 'Pangram'; src: url("../../fonts/Pangram-ExtraLight.otf"); font-weight: 200;}
 @font-face {font-family: 'Pangram'; src: url("../../fonts/Pangram-Regular.otf"); font-weight: 500;}
-@font-face {font-family: 'Pangram'; src: url("../../fonts/Pangram-Black.otf"); font-weight: 900;}
 
 /* typography */
 .GJx2_logo {
@@ -363,7 +366,7 @@
 #landing .landing .landing_info {
   position: absolute;
   bottom: 60px;
-  font-weight: 900;
+  font-weight: Bold;
   color: #053651
 }
 
