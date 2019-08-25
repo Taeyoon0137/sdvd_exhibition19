@@ -470,12 +470,21 @@
 }
 
 #intro .intro_more {
-  background-color: #575c6b;
-  background-image: url(../../img/intro_kimsom.jpg);
+  position: relative;
+  width: 160px;
+  height: 48px;
+  margin: 40px auto 48px auto;
+  background-color:#575c6b00;
+  border: 2px solid #575c6bff;
+  font-size: 16px;
+  color: #575c6bff;
+  text-align: center;
+  line-height: 48px;
 }
 
 /* about us */
 #about {
+  overflow: hidden;
   position: relative;
   margin-top: -1px;
   width: 100%;
@@ -532,4 +541,23 @@
   width: 89px;
   height: 96px;
   transform: translateX(-50%) translateY(-50%) rotateZ(25deg);
+}
+
+#about .profile_container {
+  position: relative;
+  font-size: 0px;
+  margin-left: -35px;
+  width: calc(100vw + 10px);
+}
+
+#about .profile_container .profiles {
+  display: inline-block;
+  margin: 0 0 3px 3px;
+  width: calc((100vw - 3px) / 3);
+  height: calc((100vw - 3px) / 3);
+  background-color: #0006;
+  background-image: url(../../img/profiles/sample.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
 }
