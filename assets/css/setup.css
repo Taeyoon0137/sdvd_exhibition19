@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 /* import fonts */
+@import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
 @font-face {font-family: 'KoreanCUBEG'; src: url("../../fonts/a큐브G.ttf") format("truetype");}
-@font-face { font-family: 'NanumSquareRound'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff'); font-weight: normal; font-style: normal; }
 @font-face {font-family: 'Pangram'; src: url("../../fonts/Pangram-Black.otf"); font-weight: 900;}
 
 /*
@@ -366,7 +366,7 @@
 #landing .landing .landing_info {
   position: absolute;
   bottom: 60px;
-  font-weight: Bold;
+  font-weight: 800;
   color: #053651
 }
 
