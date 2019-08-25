@@ -19,10 +19,16 @@
     <link rel="apple-touch-icon-precomposed" sizes="96x96" href="assets/icons/favicon_96.png" />
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/icons/favicon_144.png" />
     <link rel="apple-touch-icon-precomposed" sizes="192x192" href="assets/icons/favicon_192.png" />
+
+    <!--Javascript Library-->
+    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
   </head>
 
   <body>
+    <!--Loading Page-->
     <section id="loading"></section>
+
+    <!--Header-->
     <div id="background"></div>
     <header id="header">
       <div class="wrapper_full">
@@ -41,7 +47,7 @@
           <nav  id="nav_height">
             <li class="nav_item"><a href="#">Intro</a></li>
             <li class="nav_item"><a href="#">About us</a></li>
-            <li class="nav_item"><a href="#">Location</a></li>
+            <li class="nav_item"><a href="#">Photos</a></li>
             <li class="nav_item"><a href="#">Contact</a></li>
             <li class="nav_item_s"><a href="https://www.facebook.com/%EC%84%9C%EC%9A%B8%EB%94%94%EC%9E%90%EC%9D%B8%EA%B3%A0-%EC%8B%9C%EB%94%94%EA%B3%BC-%EC%A1%B8%EC%97%85%EC%9E%91%ED%92%88%EC%A0%84-%EA%B3%A7%EC%8A%A4%EB%AC%BC%EC%9D%B8-108743640494098/">Facebook</a></li>
             <li class="nav_item_s"><a href="https://instagram.com/2019sdh_vd?igshid=n3h1nbdanslhttps://instagram.com/2019sdh_vd?igshid=n3h1nbdansl">Instagram</a></li>
@@ -50,13 +56,21 @@
         </div>
       </div>
     </section>
+
+    <!--Studio GJx2-->
     <section id="Studio_GJx2">
 
     </section>
+
+    <!--Main Pages-->
     <section id="landing">
+      <!--Landing-->
+      <!--make space for alignment-->
       <div class="landing_spacer"></div>
+      <!--actual landing page-->
       <div class="landing">
         <div class="wrapper_full">
+          <!--decorative things-->
           <div class="decorations">
             <div class="deco_cwd pos_cwd"></div>
             <div class="deco_bmc pos_bmc"></div>
@@ -66,37 +80,68 @@
             <div class="deco_ox pos_ox2"></div>
             <div class="deco_bx pos_bx"></div>
           </div>
+          <!--developers logo-->
           <div class="GJx2_logo">GJx2</div>
+          <!--exhibition info-->
           <a href="#"><div class="landing_info">
             <div class="typo_lable">10:00 - 21:00</div>
             <div class="typo_body">9.3 화 - 9.6 금<br>신촌 파랑고래</div>
           </div></a>
+          <!--arrow icon-->
           <i class="icn_more"></i>
         </div>
       </div>
     </section>
+
     <section id="intro">
+      <!--Introduction and Infrom-->
       <div class="intro">
         <div class="wrapper_full">
+          <!--top decoration-->
           <div class="spacer_top">
             <div class="deco_tnd pos_tnd"></div>
             <div class="deco_omc pos_omc"></div>
             <div class="deco_bx pos_bx"></div>
           </div>
+
+          <!--head and body-->
           <h3 class="typo_h3">SDH<br>Visual Designers'<div class="outline">8th Graduate<br>Exhibition</div></h3>
           <div class="typo_body">졸업이라는 것은 두근대면서도, 약간은 두렵기도 합니다. 지난 3년간 함께 했던 학교를 뒤로하고, 이제 우리는 19년의 짧지만 긴 삶과 함께 세상으로 나아갑니다. 어떤 세상이 펼쳐질 지는 누구도 모르지만, 이제 우리는 곧 스물인 - 세상을 향해 단 한발짝을 남기고 있습니다.</div>
+
+          <!--bottom decoration-->
           <div class="spacer_bottom">
             <div class="deco_bns pos_bns"></div>
             <div class="deco_ox pos_ox"></div>
           </div>
+
+          <div class="typo_inform">
+            9월 3일 화요일부터<br>
+            6일 금요일까지<br>
+            <span class="typo_inform2">신촌 파랑고래에서</span>
+          </div>
+
+          <!--kakaomap api-->
+          <div id="daumRoughmapContainer1566735866988" class="root_daum_roughmap root_daum_roughmap_landing map_setting"></div>
+          <script charset="UTF-8">
+          	new daum.roughmap.Lander({
+          		"timestamp" : "1566735866988",
+          		"key" : "utjg",
+          		"mapWidth" : "100vw",
+          		"mapHeight" : "100vw"
+          	}).render();
+          </script>
+          <div class="spacer_bottom"></div>
+
+          <!--sample gallery-->
           <div class="cont_image img_nayung-1"></div>
           <div class="cont_image img_seobo-1"></div>
           <div class="cont_image img_kimsom-1"></div>
+
+          <!--show more-->
+          <a href="#"><div class="intro_more">멋진 작품들 더보기</div></a>
         </div>
-        <a href="#"><div class="intro_more">멋진 작품들 더보기</div></a>
       </div>
     </section>
-    <div id="map" style="width:100vw;height:100vw;"></div>
     <section id="about">
       <div class="wrapper_full">
         <div class="spacer_top">
@@ -161,18 +206,7 @@
 
     </footer>
 
-
     <!--Javascript Library-->
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=efb11b22a5832e44fec2c44f29f9ca67"></script>
-  	<script>
-  		var container = document.getElementById('map');
-  		var options = {
-  			center: new kakao.maps.LatLng(33.450701, 126.570667),
-  			level: 3
-  		};
-
-  		var map = new kakao.maps.Map(container, options);
-  	</script>
     <script src="assets/js/header_navbutton.js"></script>
     <script src="assets/js/jquery.min_1.12.4.js"></script>
     <script src="assets/js/modernizr-custom.js"></script>
