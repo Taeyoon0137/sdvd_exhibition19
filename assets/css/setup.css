@@ -24,10 +24,9 @@
 .typo_h3 {
   font-family: Pangram;
   font-weight: 900;
-  font-size: 24px;
-  line-height: 28px;
-  padding-top: 172px;
-  padding-bottom: 16px;
+  font-size: 32px;
+  line-height: 36px;
+  padding-bottom: 32px;
   color: #EB5C3D
 }
 
@@ -35,7 +34,6 @@
   font-size: 16px;
   line-height: 26px;
   color: #053651;
-  margin-bottom: 88px;
 }
 
 .typo_lable {
@@ -66,7 +64,7 @@
 }
 
 /* decorations */
-.decorations .deco_cwd {
+.deco_cwd {
   position: absolute;
   background-image: url(../../img/shape_Circle_w_Dots.png);
   background-repeat: no-repeat;
@@ -74,7 +72,7 @@
   background-size: contain;
 }
 
-.decorations .deco_bmc {
+.deco_bmc {
   position: absolute;
   background-image: url(../../img/shape_Macaronni_Blue.png);
   background-repeat: no-repeat;
@@ -82,7 +80,7 @@
   background-size: contain;
 }
 
-.decorations .deco_omc {
+.deco_omc {
   position: absolute;
   background-image: url(../../img/shape_Macaronni_Orange.png);
   background-repeat: no-repeat;
@@ -90,7 +88,7 @@
   background-size: contain;
 }
 
-.decorations .deco_bns {
+.deco_bns {
   position: absolute;
   background-image: url(../../img/shape_uneclips.png);
   background-repeat: no-repeat;
@@ -98,7 +96,7 @@
   background-size: contain;
 }
 
-.decorations .deco_ox {
+.deco_ox {
   position: absolute;
   background-image: url(../../img/shape_X_Orange.png);
   background-repeat: no-repeat;
@@ -106,7 +104,7 @@
   background-size: contain;
 }
 
-.decorations .deco_bx {
+.deco_bx {
   position: absolute;
   background-image: url(../../img/shape_X_Blue.png);
   background-repeat: no-repeat;
@@ -114,7 +112,7 @@
   background-size: contain;
 }
 
-.decorations .deco_tnd {
+.deco_tnd {
   position: absolute;
   background-image: url(../../img/shape_Triangle_w_Dots.png);
   background-repeat: no-repeat;
@@ -157,17 +155,20 @@
   -webkit-text-stroke: 1.5px #ffff;
 }
 
+#navigation .nav nav .nav_item_s {
+  margin-bottom: 20px;
+  white-space: nowrap;
+  font-family: Pangram;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 40px;
+  color: #fff;
+}
+
 #navigation .nav nav .nav_select {
   color: #ffff;
   -webkit-text-stroke: 1.5px #fff0;
-}
-
-#navigation nav .GJx2_logo {
-  position: absolute;
-  left: calc(100vw - 64px);
-  top: calc(100vh - 250px);
-  transform: translateX(-100%) translateY(-100%);
-  -webkit-text-stroke: 1px #fff;
 }
 
 /* header */
@@ -185,7 +186,7 @@
 }
 
 #background {
-  z-index: 10;
+  z-index: 1;
   position: fixed;
   top: 0;
   width: 100%;
@@ -263,8 +264,15 @@
 }
 
 /* landing */
-#landing {
-  z-index: -99;
+#landing .landing_spacer {
+  z-index: -2;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+#landing .landing {
+  z-index: -1;
   position: fixed;
   top: 0;
   width: 100%;
@@ -275,7 +283,7 @@
   background-size: cover;
 }
 
-#landing .decorations {
+#landing .landing .decorations {
   z-index: -50;
   position: relative;
   margin-left: -32px;
@@ -283,7 +291,7 @@
   height: 100%;
 }
 
-#landing .decorations .pos_cwd {
+#landing .landing .decorations .pos_cwd {
   left: 85%;
   top: 77%;
   width: 9.375%;
@@ -291,12 +299,12 @@
   transform: translateX(-50%) translateY(-50%) rotateZ(30deg);
 }
 
-#landing .decorations .pos_bmc {
+#landing .landing .decorations .pos_bmc {
   left: 72%;
   top: 70%;
 }
 
-#landing .decorations .pos_omc {
+#landing .landing .decorations .pos_omc {
   left: 58%;
   top: 15%;
   width: 10.1%;
@@ -304,7 +312,7 @@
   transform: translateX(-50%) translateY(-50%) rotateZ(15deg);
 }
 
-#landing .decorations .pos_bns {
+#landing .landing .decorations .pos_bns {
   left: 75%;
   top: 30%;
   width: 24.5%;
@@ -312,7 +320,7 @@
   transform: translateX(-50%) translateY(-50%) rotateZ(5deg);
 }
 
-#landing .decorations .pos_bx {
+#landing .landing .decorations .pos_bx {
   width: 4.8%;
   height: 2.7%;
   width: 13.9%;
@@ -320,7 +328,7 @@
   transform: translateX(-50%) translateY(-50%) rotateZ(5deg);
 }
 
-#landing .decorations .pos_ox1 {
+#landing .landing .decorations .pos_ox1 {
   left: 75%;
   top: 19%;
   width: 4%;
@@ -328,7 +336,7 @@
   transform: translateX(-50%) translateY(-50%) rotateZ(0deg);
 }
 
-#landing .decorations .pos_ox2 {
+#landing .landing .decorations .pos_ox2 {
   left: 3%;
   top: 43%;
   width: 4%;
@@ -336,7 +344,7 @@
   transform: translateX(-50%) translateY(-50%) rotateZ(0deg);
 }
 
-#landing .decorations .pos_bx {
+#landing .landing .decorations .pos_bx {
   left: 12%;
   top: 36%;
   width: 4.8%;
@@ -344,7 +352,7 @@
   transform: translateX(-50%) translateY(-50%) rotateZ(0deg);
 }
 
-#landing .GJx2_logo {
+#landing .landing .GJx2_logo {
   display: inline-block;
   position: absolute;
   right: calc((-67.31px + 24px) / 2);
@@ -352,19 +360,19 @@
   transform: rotateZ(-90deg);
 }
 
-#landing .landing_info {
+#landing .landing .landing_info {
   position: absolute;
   bottom: 60px;
   font-weight: 900;
   color: #053651
 }
 
-#landing .landing_info .typo_body {
+#landing .landing .landing_info .typo_body {
   line-height: 22px;
   margin-bottom: 0px;
 }
 
-#landing .icn_more {
+#landing .landing .icn_more {
   position: absolute;
   left: 50%;
   bottom: 16px;
@@ -375,13 +383,64 @@
 #intro {
   position: relative;
   width: 100%;
-  margin-top: 100vh;
   background-color: #fff;
   overflow: hidden;
 }
 
+#intro .spacer_top {
+  position: relative;
+  width: calc(100% +64px);
+  height: calc(100vw * 0.45);
+}
+
+#intro .spacer_top .pos_tnd {
+  left: 20%;
+  top: 72%;
+  width: 30px;
+  height: 32px;
+  transform: translateX(-50%) translateY(-50%) rotateZ(0deg);
+}
+
+#intro .spacer_top .pos_omc {
+  left: 75%;
+  top: 59%;
+  width: 57px;
+  height: 48px;
+  transform: translateX(-50%) translateY(-50%) rotateZ(0deg);
+}
+
+#intro .spacer_top .pos_bx {
+  left: 95%;
+  top: 95%;
+  width: 18px;
+  height: 18px;
+  transform: translateX(-50%) translateY(-50%) rotateZ(0deg);
+}
+
 #intro h3 {
   position: relative;
+}
+
+#intro .spacer_bottom {
+  position: relative;
+  width: calc(100% +64px);
+  height: calc(100vw * 0.2);
+}
+
+#intro .spacer_bottom .pos_ox {
+  left: 20%;
+  top: 31%;
+  width: 12px;
+  height: 12px;
+  transform: translateX(-50%) translateY(-50%) rotateZ(0deg);
+}
+
+#intro .spacer_bottom .pos_bns {
+  left: 89.5%;
+  top: 15%;
+  width: 89px;
+  height: 96px;
+  transform: translateX(-50%) translateY(-50%) rotateZ(25deg);
 }
 
 #intro .cont_image {
@@ -401,53 +460,18 @@
 }
 
 #intro .img_seobo-1 {
-  background-color: #569989;
+  background-color: #9da79d;
   background-image: url(../../img/intro_seobo.jpg);
 }
 
 #intro .img_kimsom-1 {
-  background-color: #569989;
+  background-color: #575c6b;
   background-image: url(../../img/intro_kimsom.jpg);
 }
 
-#intro .decorations .pos_tnd {
-  left: 20%;
-  top: 10%;
-  width: 10%;
-  height: 3.2%;
-  transform: translateX(-50%) translateY(-50%) rotateZ(0deg);
-}
-
-#intro .decorations .pos_omc {
-  left: 75%;
-  top: 6%;
-  width: 18%;
-  height: 7.4%;
-  transform: translateX(-50%) translateY(-50%) rotateZ(0deg);
-}
-
-#intro .decorations .pos_bns {
-  left: 89.5%;
-  top: 31.5%;
-  width: 30%;
-  height: 14.4%;
-  transform: translateX(-50%) translateY(-50%) rotateZ(25deg);
-}
-
-#intro .decorations .pos_ox {
-  left: 15%;
-  top: 31%;
-  width: 4%;
-  height: 1.6%;
-  transform: translateX(-50%) translateY(-50%) rotateZ(0deg);
-}
-
-#intro .decorations .pos_bx {
-  left: 95%;
-  top: 12%;
-  width: 6%;
-  height: 2%;
-  transform: translateX(-50%) translateY(-50%) rotateZ(0deg);
+#intro .intro_more {
+  background-color: #575c6b;
+  background-image: url(../../img/intro_kimsom.jpg);
 }
 
 /* about us */
@@ -456,4 +480,56 @@
   margin-top: -1px;
   width: 100%;
   background-color: #fff;
+}
+
+#about .spacer_top {
+  position: relative;
+  width: calc(100% +64px);
+  height: calc(100vw * 0.45);
+}
+
+#about .spacer_top .pos_tnd {
+  left: 20%;
+  top: 72%;
+  width: 30px;
+  height: 32px;
+  transform: translateX(-50%) translateY(-50%) rotateZ(0deg);
+}
+
+#about .spacer_top .pos_omc {
+  left: 75%;
+  top: 59%;
+  width: 57px;
+  height: 48px;
+  transform: translateX(-50%) translateY(-50%) rotateZ(0deg);
+}
+
+#about .spacer_top .pos_bx {
+  left: 95%;
+  top: 95%;
+  width: 18px;
+  height: 18px;
+  transform: translateX(-50%) translateY(-50%) rotateZ(0deg);
+}
+
+#about .spacer_bottom {
+  position: relative;
+  width: calc(100% +64px);
+  height: calc(100vw * 0.2);
+}
+
+#about .spacer_bottom .pos_ox {
+  left: 20%;
+  top: 31%;
+  width: 12px;
+  height: 12px;
+  transform: translateX(-50%) translateY(-50%) rotateZ(0deg);
+}
+
+#about .spacer_bottom .pos_bns {
+  left: 89.5%;
+  top: 15%;
+  width: 89px;
+  height: 96px;
+  transform: translateX(-50%) translateY(-50%) rotateZ(25deg);
 }
