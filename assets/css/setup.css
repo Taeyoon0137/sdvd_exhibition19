@@ -2,8 +2,8 @@
 
 /* import fonts */
 @import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
-@font-face {font-family: 'KoreanCUBEG'; src: url("../../fonts/a큐브G.ttf") format("truetype");}
-@font-face {font-family: 'Pangram'; src: url("../../fonts/Pangram-Black.otf"); font-weight: 900;}
+@font-face {font-family: 'Pangram'; src: url("../../fonts/Pangram-ExtraBold.otf"); font-weight: 900;}
+@font-face {font-family: 'Pangram'; src: url("../../fonts/Pangram-Medium.otf"); font-weight: 500;}
 
 /* typography */
 .GJx2_logo {
@@ -157,15 +157,15 @@
   overflow: hidden;
   top: 0;
   right: 0;
-  width: 0vw;
-  height: 100vh;
+  width: 100%;
+  height: 0vh;
   background-color: #EB5C3D;
   color: #fff;
   transition: 0.5s;
 }
 
 #navigation .nav-active {
-  width: 100vw;
+  height: 100vh;
 }
 
 #navigation .nav nav {
@@ -223,20 +223,52 @@
   height: 60px;
 }
 
-#header h1 {
-  float: left;
-  color: #053651;
-  font-family: KoreanCUBEG;
-  font-size: 20px;
+#header .stickyTop_link {
+  display: inline-block;
+  position: relative;
+  width: 87px;
+  height: 60px;
   line-height: 60px;
-  transition: 0.5s;
 }
 
-#header h1 .title_soon {
-  color: #0000;
-  -webkit-text-stroke: 1px #053651;
-  transition: 0.5s;
+#header .stickyTop_link .logo_sdvd {
+  display: inline-block;
+  float: left;
+  position: absolute;
+  top: 20px;
+  width: 87px;
+  height: 20px;
+
+  /* 로고 삽입 */
+  background-image: url(../../img/logos/logo_horizontal.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
+
+  /* 텍스트 숨기기 */
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
+
+/*
+.stickyTop .stickyTop_navContainer {
+  display: inline-block;
+  float: right;
+  position: relative;
+  width: calc(56px - 16px);
+  height: 56px;
+}
+
+.stickyTop .stickyTop_navContainer .btn {
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 18px;
+  overflow: hidden;
+  box-sizing: content-box;
+}
+*/
 
 #header .btn_nav {
   position: relative;
@@ -523,6 +555,22 @@
   text-align: center;
   line-height: 48px;
   font-weight: 800;
+  transition: 0.5s;
+}
+
+#intro .intro_more:hover {
+  position: relative;
+  width: 160px;
+  height: 48px;
+  margin: 40px auto 48px auto;
+  background-color:#EB5C3D;
+  border: 2px solid #EB5C3D;
+  font-size: 16px;
+  color: #ffff;
+  text-align: center;
+  line-height: 48px;
+  font-weight: 800;
+  transition: 0.5s;
 }
 
 /* about us */
@@ -635,4 +683,85 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
+}
+
+/* FOOTER */
+#footer {
+  display: block;
+  position: relative;
+  width: 100%;
+  background: #EB5C3D;
+}
+
+#footer .container {
+  position: relative;
+  width: auto;
+  padding: 48px 0px 64px 32px;
+  margin-right: -4px
+}
+
+#footer .container .footer_sitemap {
+  display: block;
+  margin-bottom: 24px;
+}
+
+#footer .container .footer_sitemap::after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+#footer .container .footer_sitemap .footer_list {
+  display: block;
+  float: left;
+  width: calc(50% - 16px);
+  margin-right: 16px;
+}
+
+#footer .container .footer_sitemap .footer_list .footer_title {
+  display: block;
+  margin-bottom: 32px;
+  font-family: Pangram;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -0.3px;
+  color: #FFFFFF88;
+}
+
+#footer .container .footer_sitemap .footer_list .footer_items {
+  display: block;
+  margin-bottom: 24px;
+  font-family: Pangram;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: -0.3px;
+  color: #FFFFFF;
+}
+
+#footer .container .footer_contact {
+  position: relative;
+  width: 100%;
+}
+
+#footer .container .footer_contact .footer_title {
+  display: block;
+  margin-bottom: 16px;
+  font-family: Pangram;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -0.3px;
+  color: #FFFFFF88;
+}
+
+#footer .container .footer_contact .footer_body {
+  display: block;
+  font-family: NanumSquare;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.3px;
+  color: #FFFFFF;
 }

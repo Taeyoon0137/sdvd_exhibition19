@@ -1,0 +1,227 @@
+@charset "UTF-8";
+
+/* import fonts */
+@import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
+@font-face {font-family: 'KoreanCUBEG'; src: url("../../fonts/a큐브G.ttf") format("truetype");}
+@font-face {font-family: 'Pangram'; src: url("../../fonts/Pangram-ExtraBold.otf"); font-weight: 900;}
+@font-face {font-family: 'Pangram'; src: url("../../fonts/Pangram-Medium.otf"); font-weight: 500;}
+
+/* icon */
+.icon_ham {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 8px;
+}
+
+.icon_ham::before, .icon_ham::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: #053651;
+  transition: transform .3s ease;
+}
+
+.icon_ham::before {
+  top: 0;
+}
+
+.icon_ham::after {
+  bottom: 0;
+}
+
+/* style */
+body {
+  background-color: #0002;
+}
+
+/* HEADER */
+/* header desktop */
+#header {
+  display: none;
+}
+
+/* header mobile */
+#headerMobile {
+  position: relative;
+  width: 100%;
+  height: 0;
+}
+
+#headerMobile .header_panel {
+  position: relative;
+  width: 100%;
+  height: 0px;
+  background: #fff;
+}
+
+#headerMobile.js--active .header_panel {
+  height: 400px;
+}
+
+.stickyTop {
+  height: 0;
+}
+
+.stickyTop .container {
+  position: relative;
+  width: auto;
+  height: 56px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.stickyTop .container .stickyTop_link {
+  display: inline-block;
+  position: relative;
+  width: 87px;
+  height: 56px;
+  line-height: 56px;
+}
+
+.stickyTop .container .stickyTop_link .logo_sdvd {
+  display: inline-block;
+  float: left;
+  position: absolute;
+  top: 18px;
+  width: 87px;
+  height: 20px;
+
+  /* 로고 삽입 */
+  background-image: url(../../img/logos/logo_horizontal.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
+
+  /* 텍스트 숨기기 */
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.stickyTop .stickyTop_navContainer {
+  display: inline-block;
+  float: right;
+  position: relative;
+  width: calc(56px - 16px);
+  height: 56px;
+}
+
+.stickyTop .stickyTop_navContainer .btn {
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 18px;
+  overflow: hidden;
+  box-sizing: content-box;
+}
+
+/* WELCOME */
+#welcome {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 56px);
+  overflow: hidden;
+}
+
+#welcome .welcBg {
+  z-index: -1;
+  position: sticky;
+  width: 100%;
+  height: calc(100vh - 24px);
+  background-image: url(../../img/landing_20-mobile.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+#welcome .welcTitle {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  background: #fff;
+}
+
+/* FOOTER */
+#footer {
+  display: block;
+  position: relative;
+  width: 100%;
+  background: #EB5C3D;
+}
+
+#footer .container {
+  position: relative;
+  width: auto;
+  padding: 48px 18px 64px 18px;
+}
+
+#footer .container .footer_sitemap {
+  display: block;
+  margin-bottom: 24px;
+}
+
+#footer .container .footer_sitemap::after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+#footer .container .footer_sitemap .footer_list {
+  display: block;
+  float: left;
+  width: 50%;
+}
+
+#footer .container .footer_sitemap .footer_list .footer_title {
+  display: block;
+  margin-bottom: 32px;
+  font-family: Pangram;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -0.3px;
+  color: #FFFFFF88;
+}
+
+#footer .container .footer_sitemap .footer_list .footer_items {
+  display: block;
+  margin-bottom: 24px;
+  font-family: Pangram;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: -0.3px;
+  color: #FFFFFF;
+}
+
+#footer .container .footer_contact {
+  position: relative;
+  width: 100%;
+}
+
+#footer .container .footer_contact .footer_title {
+  display: block;
+  margin-bottom: 16px;
+  font-family: Pangram;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -0.3px;
+  color: #FFFFFF88;
+}
+
+#footer .container .footer_contact .footer_body {
+  display: block;
+  font-family: NanumSquare;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.3px;
+  color: #FFFFFF;
+}
