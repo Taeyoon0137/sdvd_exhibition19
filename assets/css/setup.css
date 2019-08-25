@@ -64,6 +64,29 @@
   width: 20px;
   height: 20px;
   background-image: url(../../assets/icons/sys/icn_more.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.icn_grid {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../../assets/icons/sys/icn_grid.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.icn_list {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../../assets/icons/sys/icn_list.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
 }
 
 /* decorations */
@@ -483,6 +506,7 @@
   color: #575c6bff;
   text-align: center;
   line-height: 48px;
+  font-weight: 800;
 }
 
 /* about us */
@@ -551,6 +575,38 @@
   font-size: 0px;
   margin-left: -35px;
   width: calc(100vw + 10px);
+}
+
+#about .profile_container .profile_viewselector {
+  position: relative;
+  width: calc(100vw + 3px);
+  height: 64px;
+}
+
+#about .profile_container .pos_view {
+  display: inline-block;
+  position: relative;
+  margin-left: 3px;
+  width: calc((100vw - 3px) / 2);
+  height: 100%;
+}
+
+#about .profile_container .pos_view .icn_32 {
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 32px;
+  height: 32px;
+}
+
+#about .profile_container .pos_view .icn_grid {
+  left: 55%;
+  opacity: 0.2;
+}
+
+#about .profile_container .pos_view .icn_list {
+  left: 45%;
+  opacity: 0.2;
 }
 
 #about .profile_container .profiles {
