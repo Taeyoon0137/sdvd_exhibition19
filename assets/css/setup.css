@@ -348,6 +348,7 @@
 #landing .landing .decorations {
   z-index: -50;
   position: relative;
+  overflow: hidden;
   margin-left: -32px;
   width: calc(100% + 64px);
   height: 100%;
@@ -679,15 +680,115 @@
   width: calc((100vw - 3px) / 3);
   height: calc((100vw - 3px) / 3);
   background-color: #0006;
-  background-image: url(../../img/profiles/sample.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
 }
 
+#about .profile_container .profiles.prof001 {
+  background-image: url(../../img/profiles/001Nayeong.jpg);
+}
+
+#about .profile_container .profiles.prof002 {
+  background-image: url(../../img/profiles/002Sukwan.jpg);
+}
+
+#about .profile_container .profiles.prof003 {
+  background-image: url(../../img/profiles/003Jungyoon.jpg);
+}
+
+#about .profile_container .profiles.prof004 {
+  background-image: url(../../img/profiles/004Taeyung.jpg);
+}
+
+#about .profile_container .profiles.prof005 {
+  background-image: url(../../img/profiles/005Hyejung.jpg);
+}
+
+#about .profile_container .profiles.prof006 {
+  background-image: url(../../img/profiles/006Seohyeon.jpg);
+}
+
+#about .profile_container .profiles.prof007 {
+  background-image: url(../../img/profiles/007Sunhong.jpg);
+}
+
+#about .profile_container .profiles.prof008 {
+  background-image: url(../../img/profiles/008Seobo.jpg);
+}
+
+#about .profile_container .profiles.prof009 {
+  background-image: url(../../img/profiles/009Kyungmin.jpg);
+}
+
+#about .profile_container .profiles.prof010 {
+  background-image: url(../../img/profiles/010Yebin.jpg);
+}
+
+#about .profile_container .profiles.prof011 {
+  background-image: url(../../img/profiles/001Nayeong.jpg);
+}
+
+#about .profile_container .profiles.prof012 {
+  background-image: url(../../img/profiles/012SeungHyun.jpg);
+}
+
+#about .profile_container .profiles.prof013 {
+  background-image: url(../../img/profiles/013Jieun.jpg);
+}
+
+#about .profile_container .profiles.prof014 {
+  background-image: url(../../img/profiles/014Emsu.jpg);
+}
+
+#about .profile_container .profiles.prof015 {
+  background-image: url(../../img/profiles/015Yeeso.jpg);
+}
+
+#about .profile_container .profiles.prof016 {
+  background-image: url(../../img/profiles/016Suyoon.jpg);
+}
+
+#about .profile_container .profiles.prof017 {
+  background-image: url(../../img/profiles/017Yuri.jpg);
+}
+
+#about .profile_container .profiles.prof018 {
+  background-image: url(../../img/profiles/018Chanhwi.jpg);
+}
+
+#about .profile_container .profiles.prof019 {
+  background-image: url(../../img/profiles/001Nayeong.jpg);
+}
+
+#about .profile_container .profiles.prof020 {
+  background-image: url(../../img/profiles/020Saera.jpg);
+}
+
+#about .profile_container .profiles.prof021 {
+  background-image: url(../../img/profiles/001Nayeong.jpg);
+}
+
+#about .profile_container .profiles.prof022 {
+  background-image: url(../../img/profiles/001Nayeong.jpg);
+}
+
+#about .profile_container .profiles.prof023 {
+  background-image: url(../../img/profiles/023Minseong.jpg);
+}
+
+#about .profile_container .profiles.prof024 {
+  background-image: url(../../img/profiles/025Hyorim.jpg);
+}
+
+#about .profile_container .profiles.prof025 {
+  background-image: url(../../img/profiles/001Nayeong.jpg);
+}
+
 /* FOOTER */
 #footer {
   display: block;
+  overflow: hidden;
   position: relative;
   width: 100%;
   background: #EB5C3D;
