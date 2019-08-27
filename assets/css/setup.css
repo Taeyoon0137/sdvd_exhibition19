@@ -5,6 +5,27 @@
 @font-face {font-family: 'Pangram'; src: url("../../fonts/Pangram-ExtraBold.otf"); font-weight: 900;}
 @font-face {font-family: 'Pangram'; src: url("../../fonts/Pangram-Medium.otf"); font-weight: 500;}
 
+/* Main Logo */
+#mainLogo .outline {
+  fill:none;
+  stroke:#053651;
+  stroke-width:1px;
+}
+
+#mainLogo .fill {
+  fill:#053651;
+}
+
+.nav--active #mainLogo .outline {
+  fill:none;
+  stroke:#fff;
+  stroke-width:1px;
+}
+
+.nav--active #mainLogo .fill {
+  fill:#fff;
+}
+
 /* typography */
 .GJx2_logo {
   color: #0000;
@@ -231,44 +252,13 @@
   line-height: 60px;
 }
 
-#header .stickyTop_link .logo_sdvd {
+#header .stickyTop_link #mainLogo {
   display: inline-block;
   float: left;
   position: absolute;
-  top: 20px;
-  width: 87px;
-  height: 20px;
-
-  /* 로고 삽입 */
-  background-image: url(../../img/logos/logo_horizontal.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: left center;
-
-  /* 텍스트 숨기기 */
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-
-/*
-.stickyTop .stickyTop_navContainer {
-  display: inline-block;
-  float: right;
-  position: relative;
-  width: calc(56px - 16px);
-  height: 56px;
-}
-
-.stickyTop .stickyTop_navContainer .btn {
-  display: block;
-  width: 20px;
-  height: 20px;
-  padding: 18px;
-  overflow: hidden;
-  box-sizing: content-box;
-}
-*/
 
 #header .btn_nav {
   position: relative;
@@ -298,14 +288,7 @@
   transition: 0.5s;
 }
 
-#header .nav-active h1 {
-  color: #fff;
-}
 
-#header .nav-active h1 .title_soon {
-  color: #0000;
-  -webkit-text-stroke: 1px #fff;
-}
 
 #header .nav-active .btn_nav .btn_nav_comp {
   position: absolute;
@@ -682,107 +665,175 @@
   background-color: #0006;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: contain;
+  background-size: cover;
 }
 
 #about .profile_container .profiles.prof001 {
-  background-image: url(../../img/profiles/001Nayeong.jpg);
+  background-image: url(../../img/profiles/001.jpg);
 }
 
 #about .profile_container .profiles.prof002 {
-  background-image: url(../../img/profiles/002Sukwan.jpg);
+  background-image: url(../../img/profiles/002.jpg);
 }
 
 #about .profile_container .profiles.prof003 {
-  background-image: url(../../img/profiles/003Jungyoon.jpg);
+  background-image: url(../../img/profiles/003.jpg);
 }
 
 #about .profile_container .profiles.prof004 {
-  background-image: url(../../img/profiles/004Taeyung.jpg);
+  background-image: url(../../img/profiles/004.jpg);
 }
 
 #about .profile_container .profiles.prof005 {
-  background-image: url(../../img/profiles/005Hyejung.jpg);
+  background-image: url(../../img/profiles/005.jpg);
 }
 
 #about .profile_container .profiles.prof006 {
-  background-image: url(../../img/profiles/006Seohyeon.jpg);
+  background-image: url(../../img/profiles/006.jpg);
 }
 
 #about .profile_container .profiles.prof007 {
-  background-image: url(../../img/profiles/007Sunhong.jpg);
+  background-image: url(../../img/profiles/007.jpg);
 }
 
 #about .profile_container .profiles.prof008 {
-  background-image: url(../../img/profiles/008Seobo.jpg);
+  background-image: url(../../img/profiles/008.jpg);
 }
 
 #about .profile_container .profiles.prof009 {
-  background-image: url(../../img/profiles/009Kyungmin.jpg);
+  background-image: url(../../img/profiles/009.jpg);
 }
 
 #about .profile_container .profiles.prof010 {
-  background-image: url(../../img/profiles/010Yebin.jpg);
+  background-image: url(../../img/profiles/010.jpg);
 }
 
 #about .profile_container .profiles.prof011 {
-  background-image: url(../../img/profiles/001Nayeong.jpg);
+  background-image: url(../../img/profiles/011.jpg);
 }
 
 #about .profile_container .profiles.prof012 {
-  background-image: url(../../img/profiles/012SeungHyun.jpg);
+  background-image: url(../../img/profiles/012.jpg);
 }
 
 #about .profile_container .profiles.prof013 {
-  background-image: url(../../img/profiles/013Jieun.jpg);
+  background-image: url(../../img/profiles/013.jpg);
 }
 
 #about .profile_container .profiles.prof014 {
-  background-image: url(../../img/profiles/014Emsu.jpg);
+  background-image: url(../../img/profiles/014.jpg);
 }
 
 #about .profile_container .profiles.prof015 {
-  background-image: url(../../img/profiles/015Yeeso.jpg);
+  background-image: url(../../img/profiles/015.jpg);
 }
 
 #about .profile_container .profiles.prof016 {
-  background-image: url(../../img/profiles/016Suyoon.jpg);
+  background-image: url(../../img/profiles/016.jpg);
 }
 
 #about .profile_container .profiles.prof017 {
-  background-image: url(../../img/profiles/017Yuri.jpg);
+  background-image: url(../../img/profiles/017.jpg);
 }
 
 #about .profile_container .profiles.prof018 {
-  background-image: url(../../img/profiles/018Chanhwi.jpg);
+  background-image: url(../../img/profiles/018.jpg);
 }
 
 #about .profile_container .profiles.prof019 {
-  background-image: url(../../img/profiles/001Nayeong.jpg);
+  background-image: url(../../img/profiles/019.jpg);
 }
 
 #about .profile_container .profiles.prof020 {
-  background-image: url(../../img/profiles/020Saera.jpg);
-}
-
-#about .profile_container .profiles.prof021 {
-  background-image: url(../../img/profiles/001Nayeong.jpg);
+  background-image: url(../../img/profiles/020.jpg);
 }
 
 #about .profile_container .profiles.prof022 {
-  background-image: url(../../img/profiles/001Nayeong.jpg);
+  background-image: url(../../img/profiles/022.jpg);
 }
 
 #about .profile_container .profiles.prof023 {
-  background-image: url(../../img/profiles/023Minseong.jpg);
-}
-
-#about .profile_container .profiles.prof024 {
-  background-image: url(../../img/profiles/025Hyorim.jpg);
+  background-image: url(../../img/profiles/023.jpg);
 }
 
 #about .profile_container .profiles.prof025 {
-  background-image: url(../../img/profiles/001Nayeong.jpg);
+  background-image: url(../../img/profiles/025.jpg);
+}
+
+#about .profile_container .profiles.prof101 {
+  background-image: url(../../img/profiles/101.jpg);
+}
+
+#about .profile_container .profiles.prof102 {
+  background-image: url(../../img/profiles/102.jpg);
+}
+
+#about .profile_container .profiles.prof103 {
+  background-image: url(../../img/profiles/103.jpg);
+}
+
+#about .profile_container .profiles.prof104 {
+  background-image: url(../../img/profiles/104.jpg);
+}
+
+#about .profile_container .profiles.prof105 {
+  background-image: url(../../img/profiles/105.jpg);
+}
+
+#about .profile_container .profiles.prof106 {
+  background-image: url(../../img/profiles/106.jpg);
+}
+
+#about .profile_container .profiles.prof107 {
+  background-image: url(../../img/profiles/107.jpg);
+}
+
+#about .profile_container .profiles.prof108 {
+  background-image: url(../../img/profiles/108.jpg);
+}
+
+#about .profile_container .profiles.prof109 {
+  background-image: url(../../img/profiles/109.jpg);
+}
+
+#about .profile_container .profiles.prof110 {
+  background-image: url(../../img/profiles/110.jpg);
+}
+
+#about .profile_container .profiles.prof111 {
+  background-image: url(../../img/profiles/111.jpg);
+}
+
+#about .profile_container .profiles.prof112 {
+  background-image: url(../../img/profiles/112.jpg);
+}
+
+#about .profile_container .profiles.prof113 {
+  background-image: url(../../img/profiles/113.jpg);
+}
+
+#about .profile_container .profiles.prof114 {
+  background-image: url(../../img/profiles/114.jpg);
+}
+
+#about .profile_container .profiles.prof115 {
+  background-image: url(../../img/profiles/115.jpg);
+}
+
+#about .profile_container .profiles.prof116 {
+  background-image: url(../../img/profiles/116.jpg);
+}
+
+#about .profile_container .profiles.prof117 {
+  background-image: url(../../img/profiles/117.jpg);
+}
+
+#about .profile_container .profiles.prof118 {
+  background-image: url(../../img/profiles/118.jpg);
+}
+
+#about .profile_container .profiles.prof119 {
+  background-image: url(../../img/profiles/119.jpg);
 }
 
 /* FOOTER */
